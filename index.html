@@ -1,8 +1,9 @@
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Fanny Maharani</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Fanny Maharani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
@@ -19,129 +20,270 @@
     </nav>
 
     <header id="beranda">
-        <h2>Hi, I'm Fanny Maharani</h2>
-        <p>UI/UX Designer</p>
-        <p>Dengan pendekatan berbasis riset dan desain yang estetis, saya siap membantu Anda menciptakan produk digital yang user-friendly.
-            Lihat portfolio saya untuk mengetahui lebih lanjut!
-        </p>
-        <button>Lihat Portfolio</button>
-        <button>Hubungi Saya</button>
+        <div class="container">
+            <div class="text">
+                <h2>Hi, I'm Fanny Maharani</h2>
+                <p class="role">UI/UX Designer</p>
+                <p>Dengan pendekatan berbasis riset dan desain yang estetis, saya siap membantu Anda menciptakan produk digital yang user-friendly.
+                    Lihat portfolio saya untuk mengetahui lebih lanjut!
+                </p>
+                <button>Lihat Portfolio</button>
+                <button>Hubungi Saya</button>
+            </div>
+            <div class="image">
+                <img src="Gambar1.png" alt="Fanny Maharani">
+            </div>
+        </div>
     </header>
-
+    
     <section id="tentang">
-        <h2>Tentang Saya</h2>
-        <p>Saya Fanny Maharani, seorang UI/UX Designer yang memiliki passion dalam menciptakan desain yang fungsional dan estetis.
-            Dengan pengalaman dalam penelitian pengguna, wireframing, prototyping, dan usability testing.
-            Saya berkomitmen menghadirkan solusi digital yang efektif dan menarik.
-            Saya percaya bahwa desain yang baik dapat meningkatkan pengalaman pengguna 
-            dan memberikan nilai lebih bagi bisnis.
-        </p>
-    </section>
+        <div class="container reverse">
+            <div class="image">
+                <img src="Gambar2.png" alt="Fanny Maharani">
+            </div>
+            <div class="text">
+                <h2>Tentang Saya</h2>
+                <p>Saya Fanny Maharani, seorang UI/UX Designer yang memiliki passion dalam menciptakan desain yang fungsional dan estetis.
+                    Dengan pengalaman dalam penelitian pengguna, wireframing, prototyping, dan usability testing.
+                    Saya berkomitmen menghadirkan solusi digital yang efektif dan menarik.
+                    Saya percaya bahwa desain yang baik dapat meningkatkan pengalaman pengguna 
+                    dan memberikan nilai lebih bagi bisnis.
+                </p>
+            </div>
+        </div>
+    </section>    
 
     <section id="keahlian">
         <h2>Keahlian</h2>
-        <ul>
-            <li>UI Design</li>
-            <li>UX Research</li>
-            <li>Responsive Design</li>
-            <li>HTML/CSS</li>
-            <li>Figma</li>
-            <li>Design Systems</li>
-        </ul>
-    </section>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-info">
+              <span class="skill-icon">🛠️</span>
+              <span class="skill-name">UI Design</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <span class="skill-icon">📊</span>
+              <span class="skill-name">UX Research</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <span class="skill-icon">📱</span>
+              <span class="skill-name">Responsive Design</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%;"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <span class="skill-icon">💻</span>
+              <span class="skill-name">HTML/CSS</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 78%;"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <span class="skill-icon">🎨</span>
+              <span class="skill-name">Figma</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 70%;"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <span class="skill-icon">🧩</span>
+              <span class="skill-name">Design Systems</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 72%;"></div>
+            </div>
+          </div>
+        </div>
+      </section>      
 
-    <section id="mengapa">
+      <section id="mengapa">
         <h2>Mengapa Mempekerjakan Saya</h2>
-        <div>
-            <h3>Berpikir Kreatif</h3>
-            <p>Selalu mencari solusi inovatif untuk setiap tantangan desain dengan pendekatan yang segar dan unik.</p>
+        <div class="why-card">
+            <div class="card">
+                <div class="icon">💡</div>
+                <h3>Berpikir Kreatif</h3>
+                <p>Selalu mencari solusi inovatif untuk setiap tantangan desain dengan pendekatan yang segar dan unik.</p>
+            </div>
+            <div class="card">
+                <div class="icon">⏰</div>
+                <h3>Tepat Waktu</h3>
+                <p>Menghargai deadline dan selalu menyelesaikan proyek sesuai dengan jadwal yang disepakati.</p>
+            </div>
+            <div class="card">
+                <div class="icon">💬</div>
+                <h3>Komunikasi Baik</h3>
+                <p>Menjaga komunikasi yang jelas dan responsif sepanjang proses pengerjaan proyek.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🚀</div>
+                <h3>Selalu Belajar dan Berkembang</h3>
+                <p>Memiliki semangat untuk terus meningkatkan keterampilan dan mengikuti perkembangan industri.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🔍</div>
+                <h3>Berorientasi pada Detail</h3>
+                <p>Memastikan setiap aspek dari pekerjaan dilakukan dengan presisi dan ketelitian tinggi.</p>
+            </div>
         </div>
-        <div>
-            <h3>Tepat Waktu</h3>
-            <p>Menghargai deadline dan selalu menyelesaikan proyek sesuai dengan jadwal yang disepakati.</p>
-        </div>
-        <div>
-            <h3>Komunikasi Baik</h3>
-            <p>Menjaga komunikasi yang jelas dan responsif sepanjang proses pengerjaan proyek.</p>
-        </div>
-        <div>
-            <h3>Selalu Belajar dan Berkembang</h3>
-            <p>Memiliki semangat untuk terus meningkatkan keterampilan dan mengikuti perkembangan industri.</p>
-        </div>
-        <div>
-            <h3>Berorientasi pada Detail</h3>
-            <p>Memastikan setiap aspek dari pekerjaan dilakukan dengan presisi dan ketelitian tinggi.</p>
-        </div>
-    </section>
+    </section>    
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div>
-            <button>Semua</button>
-            <button>Web Design</button>
-            <button>Mobile App</button>
-            <button>UI/UX</button>
+    <section id="portfolio" class="portfolio">
+      <div class="portfolio-header">
+        <h2 class="section-title">Portfolio</h2>
+      </div>
+    
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="web">Web Design</button>
+        <button class="filter-btn" data-filter="mobile">Mobile App</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX</button>
+      </div>
+    
+      <div class="portfolio-gallery">
+        <div class="portfolio-item" data-category="web">
+          <img src="portfolio1.png" alt="Project Web Design">
         </div>
-        <div>
-            <img src="portfolio1.jpg" alt="Portfolio 1">
-            <img src="portfolio2.jpg" alt="Portfolio 2">
+        <div class="portfolio-item" data-category="mobile">
+          <img src="portfolio2.png" alt="Project Mobile App">
         </div>
-    </section>
+      </div>
+    </section>      
+
 
     <section id="testimoni">
         <h2>Testimoni Client</h2>
-        <div>
-            <div>
-                <img src="client1.jpg" alt="Client 1">
-                <h3>Dinda Kirana</h3>
-                <p>CEO, TechStart</p>
-                <p>"Fanny sangat profesional dan desainnya luar biasa!"</p>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <img src="images-dinda.jpeg" alt="Dinda Kirana">
+                <div class="testimonial-text">
+                    <strong>Dinda Kirana</strong><br>
+                    <span class="jabatan">CEO, TechStart</span>
+                    <p>“Bekerja dengan Fanny adalah pengalaman yang luar biasa! Desainnya modern, fungsional, dan sangat user-friendly.”</p>
+                </div>
             </div>
-            <div>
-                <img src="client2.jpg" alt="Client 2">
-                <h3>William</h3>
-                <p>Founder, Startup</p>
-                <p>"Desain yang diberikan sangat elegan dan mudah digunakan."</p>
+            <div class="testimonial-card">
+                <img src="images-william.jpeg" alt="William">
+                <div class="testimonial-text">
+                    <strong>William</strong><br>
+                    <span class="jabatan">Founder, HealthTech</span>
+                    <p>“Profesional, cepat, dan hasilnya luar biasa! Saya sangat puas dengan desain yang dibuat oleh Fanny. Terima kasih!”</p>
+                </div>
             </div>
-            <div>
-                <img src="client3.jpg" alt="Client 3">
-                <h3>Linda Wijaya</h3>
-                <p>Product Manager, Fintech</p>
-                <p>"Kolaborasi dengan Fanny berjalan sangat lancar dan hasilnya memuaskan!"</p>
+            <div class="testimonial-card">
+                <img src="images-linda.jpeg" alt="Linda Wijaya">
+                <div class="testimonial-text">
+                    <strong>Linda Wijaya</strong><br>
+                    <span class="jabatan">Product Manager, FinTech</span>
+                    <p>“Fanny mampu memahami kebutuhan bisnis kami dan menerjemahkannya ke dalam desain UI/UX yang elegan dan efektif. Terima kasih!”</p>
+                </div>
             </div>
-            <div>
-                <img src="client4.jpg" alt="Client 4">
-                <h3>Ahmad Setiawan</h3>
-                <p>CTO, Software Company</p>
-                <p>"Fanny memahami kebutuhan pengguna dan menerjemahkannya ke dalam desain yang luar biasa."</p>
+            <!-- Duplikasi jika mau lebih banyak -->
+            <div class="testimonial-card">
+                <img src="images-christie.jpeg" alt="Dinda Kirana">
+                <div class="testimonial-text">
+                    <strong>Christie</strong><br>
+                    <span class="jabatan">CEO, TechStart</span>
+                    <p>“Bekerja dengan Fanny adalah pengalaman yang luar biasa! Desainnya modern, fungsional, dan sangat user-friendly.”</p>
+                </div>
             </div>
-            <div>
-                <img src="client5.jpg" alt="Client 5">
-                <h3>Sarah Rahma</h3>
-                <p>UI/UX Lead, E-commerce</p>
-                <p>"Sangat terkesan dengan hasil kerja Fanny, benar-benar memperhatikan detail."</p>
+            <div class="testimonial-card">
+                <img src="images-steffan.jpeg" alt="William">
+                <div class="testimonial-text">
+                    <strong>Steffan</strong><br>
+                    <span class="jabatan">Founder, HealthTech</span>
+                    <p>“Profesional, cepat, dan hasilnya luar biasa! Saya sangat puas dengan desain yang dibuat oleh Fanny. Terima kasih!”</p>
+                </div>
             </div>
-            <div>
-                <img src="client6.jpg" alt="Client 6">
-                <h3>Rizky Alamsyah</h3>
-                <p>Designer, Creative Agency</p>
-                <p>"Fanny selalu menghadirkan desain yang inovatif dan mudah diimplementasikan."</p>
+            <div class="testimonial-card">
+                <img src="images-james.jpeg" alt="Linda Wijaya">
+                <div class="testimonial-text">
+                    <strong>James</strong><br>
+                    <span class="jabatan">Product Manager, FinTech</span>
+                    <p>“Fanny mampu memahami kebutuhan bisnis kami dan menerjemahkannya ke dalam desain UI/UX yang elegan dan efektif. Terima kasih!”</p>
+                </div>
             </div>
         </div>
-    </section>
+    </section>    
 
     <section id="contact">
         <h2>Hubungi Saya</h2>
-        <form>
-            <input type="text" placeholder="Nama Anda">
-            <input type="email" placeholder="Email Anda">
-            <textarea placeholder="Pesan"></textarea>
-            <button>Kirim Pesan</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Fanny Maharani. All rights reserved.</p>
-    </footer>
+        <div class="contact-container">
+          <form class="contact-form">
+            <label for="name">Nama</label>
+            <input type="text" id="name" placeholder="Nama lengkap Anda" required>
+      
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email@example.com" required>
+      
+            <label for="message">Pesan</label>
+            <textarea id="message" rows="5" placeholder="Tulis pesan Anda di sini" required></textarea>
+      
+            <button type="submit">Kirim Pesan</button>
+          </form>
+      
+          <div class="contact-info">
+            <h3>Informasi Kontak</h3>
+            <ul>
+              <li><i class="icon-location"></i> Tasikmalaya, Indonesia</li>
+              <li><i class="icon-email"></i> fannymaharani05@gmail.com</li>
+              <li><i class="icon-phone"></i> +62 857 7344 4516</li>
+            </ul>
+            <div class="map">
+              <img src="maps.png" alt="Map">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <footer>
+        <div class="footer-content">
+          <div class="footer-about">
+            <p>Menciptakan pengalaman digital yang bermakna melalui desain yang berpusat pada pengguna.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Beranda</a></li>
+              <li><a href="#">Tentang</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Berlangganan untuk mendapatkan update terbaru.</p>
+            <form>
+              <input type="email" placeholder="Email address">
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Fanny Maharani. All rights reserved.</p>
+          <div class="footer-socials">
+            <a href="#"><i class="icon-linkedin"></i></a>
+            <a href="#"><i class="icon-instagram"></i></a>
+            <a href="#"><i class="icon-behance"></i></a>
+          </div>
+        </div>
+      </footer>
+            
 </body>
 </html>
