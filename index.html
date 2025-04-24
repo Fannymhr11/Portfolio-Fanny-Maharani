@@ -4,14 +4,26 @@
   <title>Portfolio - Fanny Maharani</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  
 </head>
 <body>
     <nav>
         <h1>My Portfolio</h1>
-        <ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
             <li><a href="#beranda">Beranda</a></li>
             <li><a href="#tentang">Tentang</a></li>
-            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#keahlian">Keahlian</a></li>
             <li><a href="#mengapa">Mengapa Saya</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#testimoni">Testimoni</a></li>
@@ -27,8 +39,9 @@
                 <p>Dengan pendekatan berbasis riset dan desain yang estetis, saya siap membantu Anda menciptakan produk digital yang user-friendly.
                     Lihat portfolio saya untuk mengetahui lebih lanjut!
                 </p>
-                <button>Lihat Portfolio</button>
-                <button>Hubungi Saya</button>
+                <button onclick="location.href='#portfolio'">Lihat Portfolio</button>
+                <button onclick="location.href='#contact'">Hubungi Saya</button>
+
             </div>
             <div class="image">
                 <img src="images/Gambar1.png" alt="Fanny Maharani">
@@ -39,7 +52,7 @@
     <section id="tentang">
         <div class="container reverse">
             <div class="image">
-                <img src="Gambar2.png" alt="Fanny Maharani">
+                <img src="images/Gambar2.png" alt="Fanny Maharani">
             </div>
             <div class="text">
                 <h2>Tentang Saya</h2>
@@ -158,20 +171,20 @@
     
       <div class="portfolio-gallery">
         <div class="portfolio-item" data-category="web">
-          <img src="portfolio1.png" alt="Project Web Design">
+          <img src="images/portfolio1.png" alt="Project Web Design">
         </div>
         <div class="portfolio-item" data-category="mobile">
-          <img src="portfolio2.png" alt="Project Mobile App">
+          <img src="images/portfolio2.png" alt="Project Mobile App">
+        </div>
         </div>
       </div>
-    </section>      
-
+    </section>         
 
     <section id="testimoni">
         <h2>Testimoni Client</h2>
         <div class="testimonial-grid">
             <div class="testimonial-card">
-                <img src="images-dinda.jpeg" alt="Dinda Kirana">
+                <img src="images/images-dinda.jpeg" alt="Dinda Kirana">
                 <div class="testimonial-text">
                     <strong>Dinda Kirana</strong><br>
                     <span class="jabatan">CEO, TechStart</span>
@@ -179,7 +192,7 @@
                 </div>
             </div>
             <div class="testimonial-card">
-                <img src="images-william.jpeg" alt="William">
+                <img src="images/images-william.jpeg" alt="William">
                 <div class="testimonial-text">
                     <strong>William</strong><br>
                     <span class="jabatan">Founder, HealthTech</span>
@@ -187,7 +200,7 @@
                 </div>
             </div>
             <div class="testimonial-card">
-                <img src="images-linda.jpeg" alt="Linda Wijaya">
+                <img src="images/images-linda.jpeg" alt="Linda Wijaya">
                 <div class="testimonial-text">
                     <strong>Linda Wijaya</strong><br>
                     <span class="jabatan">Product Manager, FinTech</span>
@@ -196,7 +209,7 @@
             </div>
             <!-- Duplikasi jika mau lebih banyak -->
             <div class="testimonial-card">
-                <img src="images-christie.jpeg" alt="Dinda Kirana">
+                <img src="images/images-christie.jpeg" alt="Dinda Kirana">
                 <div class="testimonial-text">
                     <strong>Christie</strong><br>
                     <span class="jabatan">CEO, TechStart</span>
@@ -204,7 +217,7 @@
                 </div>
             </div>
             <div class="testimonial-card">
-                <img src="images-steffan.jpeg" alt="William">
+                <img src="images/images-steffan.jpeg" alt="William">
                 <div class="testimonial-text">
                     <strong>Steffan</strong><br>
                     <span class="jabatan">Founder, HealthTech</span>
@@ -212,7 +225,7 @@
                 </div>
             </div>
             <div class="testimonial-card">
-                <img src="images-james.jpeg" alt="Linda Wijaya">
+                <img src="images/images-james.jpeg" alt="Linda Wijaya">
                 <div class="testimonial-text">
                     <strong>James</strong><br>
                     <span class="jabatan">Product Manager, FinTech</span>
@@ -223,35 +236,38 @@
     </section>    
 
     <section id="contact">
-        <h2>Hubungi Saya</h2>
-        <div class="contact-container">
-          <form class="contact-form">
-            <label for="name">Nama</label>
-            <input type="text" id="name" placeholder="Nama lengkap Anda" required>
-      
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="email@example.com" required>
-      
-            <label for="message">Pesan</label>
-            <textarea id="message" rows="5" placeholder="Tulis pesan Anda di sini" required></textarea>
-      
-            <button type="submit">Kirim Pesan</button>
-          </form>
-      
-          <div class="contact-info">
-            <h3>Informasi Kontak</h3>
-            <ul>
-              <li><i class="icon-location"></i> Tasikmalaya, Indonesia</li>
-              <li><i class="icon-email"></i> fannymaharani05@gmail.com</li>
-              <li><i class="icon-phone"></i> +62 857 7344 4516</li>
-            </ul>
-            <div class="map">
-              <img src="maps.png" alt="Map">
-            </div>
+      <h2>Hubungi Saya</h2>
+      <div class="contact-container">
+        <form id="contactForm" class="contact-form" action="submit.php" method="POST">
+          <label for="name">Nama</label>
+          <input type="text" id="name" name="name" placeholder="Nama lengkap Anda" required>
+        
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="email@example.com" required>
+        
+          <label for="phone">Nomor Handphone</label>
+          <input type="text" id="phone" name="phone" placeholder="Contoh: 085712345678" required>
+        
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini" required></textarea>
+        
+          <button type="submit">Kirim Pesan</button>
+        </form>        
+    
+        <div class="contact-info">
+          <h3>Informasi Kontak</h3>
+          <ul>
+            <li><i class="icon-location"></i> Tasikmalaya, Indonesia</li>
+            <li><i class="icon-email"></i> fannymaharani05@gmail.com</li>
+            <li><i class="icon-phone"></i> +62 857 7344 4516</li>
+          </ul>
+          <div class="map">
+            <img src="images/maps.png" alt="Map">
           </div>
         </div>
-      </section>
-      
+      </div>
+    </section>
+    
       <footer>
         <div class="footer-content">
           <div class="footer-about">
@@ -284,6 +300,17 @@
           </div>
         </div>
       </footer>
-            
+        
+      <script>
+        function toggleMenu() {
+          document.querySelector('.nav-links').classList.toggle('active');
+        }
+      </script>
+      
+      <!-- Menambahkan jQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <!-- Menambahkan script.js -->
+      <script src="script.js"></script>
+       
 </body>
 </html>
